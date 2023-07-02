@@ -1,0 +1,20 @@
+// Method Overloading with same name but different arguments
+
+public class Main
+{
+    static void test(){
+        System.out.println("No Argument");
+    }
+    static void test(int a){
+        System.out.println("One Argument");
+    }
+    static void test(int a, int b){
+        System.out.println("Two Argument");
+    }
+	public static void main(String[] args) {
+	    Main a=new Main();
+		a.test();
+		a.test(11);
+		a.test(13,14);
+	}
+}
