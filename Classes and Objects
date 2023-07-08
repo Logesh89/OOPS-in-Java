@@ -1,0 +1,21 @@
+import java.util.*;
+class Sample{
+    int marks;
+    int rollno;
+    
+    Sample(){
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter Mark:");
+        marks=sc.nextInt();
+        System.out.println("Enter Rollno:");
+        rollno=sc.nextInt();
+    }
+}
+class Main{
+    public static void main(String[] args){
+        Sample obj=new Sample();
+        System.out.println(obj.marks);
+        System.out.println(obj.rollno);
+        
+    }
+}
