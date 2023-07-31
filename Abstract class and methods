@@ -1,0 +1,37 @@
+abstract class A{
+    void display(){
+        System.out.println("Method class in A");
+    }
+    abstract void open();
+}
+abstract class B extends A{
+    void open(){
+        System.out.println("Method class in B");
+    }
+    abstract void show();
+}
+class C extends B{
+    void show(){
+        System.out.println("Method class in C");
+    }
+}
+
+class Main{
+    public static void main(String[] args){
+        C obj=new C();
+        obj.display();
+        obj.open();
+        obj.show();
+        
+    }
+}
+
+
+
+
+/*
+output:
+Method class in A
+Method class in B
+Method class in c
+*/
